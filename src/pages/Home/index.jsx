@@ -8,7 +8,7 @@ function Home() {
       <div className='sidebar w-2/12 bg-gray-50'>
         <Sidebar />
       </div>
-      <div className='content w-10/12 bg-white p-4'>
+      <div className='content w-10/12 bg-white px-4 overflow-y-scroll'>
         <Outlet />
       </div>
     </div>
