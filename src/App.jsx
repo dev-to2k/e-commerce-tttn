@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import './App.css'
 import About from './pages/About'
+import Cart from './pages/Cart'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
-import Content from './pages/Home/components/Content'
+import Main from './pages/Home/components/Main'
 import Product from './pages/Product'
 
 function App() {
@@ -12,8 +12,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />}>
-          <Route index element={<Content />} />
+          <Route index element={<Main />} />
           <Route path='products' element={<Product />} />
+          <Route path='cart' element={<Cart />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
 
