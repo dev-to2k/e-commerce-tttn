@@ -1,19 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Logo from '../../../../assets/images/logo-nav.png'
 
 function Navbar() {
   return (
-    <nav className='bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky top-0 inset-x-full z-20 shadow -mx-4'>
+    <nav className='bg-white border-gray-200 px-2 sm:px-4 py-4 dark:bg-gray-900 sticky top-0 inset-x-full z-20 shadow -mx-4'>
       <div className='container flex flex-wrap justify-between items-center mx-auto'>
-        <a href='https://flowbite.com/' className='flex items-center'>
-          <img
-            src='https://flowbite.com/docs/images/logo.svg'
-            className='mr-3 h-6 sm:h-9'
-            alt='Flowbite Logo'
-          />
-          <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
-            Flowbite
-          </span>
-        </a>
+        <Link to='/' className='flex items-center'>
+          <h3 className='block uppercase font-bold text-2xl text-black rounded md:bg-transparent'>
+            Nike Store
+          </h3>
+        </Link>
         <div className='flex md:order-2'>
           <button
             type='button'
@@ -57,7 +54,7 @@ function Navbar() {
             <input
               type='text'
               id='search-navbar'
-              className='block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+              className='block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-black focus:border-black'
               placeholder='Search...'
             />
           </div>
@@ -85,7 +82,7 @@ function Navbar() {
           </button>
         </div>
         <div
-          className='hidden justify-between items-center w-full md:flex md:w-auto md:order-1'
+          className='hidden justify-between ml-24 items-center w-full md:flex md:w-auto md:order-1'
           id='navbar-search'
         >
           <div className='relative mt-3 md:hidden'>
@@ -111,31 +108,15 @@ function Navbar() {
               placeholder='Search...'
             />
           </div>
-          <ul className='flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+          <ul className='flex flex-col bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
             <li>
-              <a
-                href='#'
-                className='block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
-                aria-current='page'
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href='#'
-                className='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href='#'
-                className='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'
-              >
-                Services
-              </a>
+              <Link to='/'>
+                <img
+                  src={Logo}
+                  className='mr-3 h-6 object-cover sm:h-9'
+                  alt='Logo'
+                />
+              </Link>
             </li>
           </ul>
         </div>

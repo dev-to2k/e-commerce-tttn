@@ -1,11 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Logo from '../../../assets/images/logo.png'
+import Logo from '../../../../assets/images/logo.png'
 
 function Sidebar() {
   const menuList = [
     { name: 'Home', icon: 'fa-solid fa-house-chimney', link: '/' },
-    { name: 'Products', icon: 'fa-brands fa-product-hunt', link: '/products' },
+    {
+      name: 'Products',
+      icon: 'fa-brands fa-product-hunt',
+      link: '/products/men',
+    },
     { name: 'Cart', icon: 'fa-solid fa-cart-shopping', link: '/cart' },
     { name: 'About', icon: 'fa-solid fa-address-card', link: '/about' },
     { name: 'Contact', icon: 'fa-solid fa-address-book', link: '/contact' },

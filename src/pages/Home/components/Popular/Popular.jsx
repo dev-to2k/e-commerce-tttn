@@ -2,13 +2,13 @@ import React from 'react'
 import Slider from 'react-slick'
 import { Link } from 'react-router-dom'
 
-import Popular1 from '../../../assets/images/popular-1.png'
-import Popular2 from '../../../assets/images/popular-2.png'
-import Popular3 from '../../../assets/images/popular-3.png'
-import Popular4 from '../../../assets/images/popular-4.png'
-import Popular5 from '../../../assets/images/popular-5.png'
-import Popular6 from '../../../assets/images/popular-6.png'
-import Popular7 from '../../../assets/images/popular-7.png'
+import Popular1 from '../../../../assets/images/popular-1.png'
+import Popular2 from '../../../../assets/images/popular-2.png'
+import Popular3 from '../../../../assets/images/popular-3.png'
+import Popular4 from '../../../../assets/images/popular-4.png'
+import Popular5 from '../../../../assets/images/popular-5.png'
+import Popular6 from '../../../../assets/images/popular-6.png'
+import Popular7 from '../../../../assets/images/popular-7.png'
 
 function Popular() {
   const settingsMultiple = {
