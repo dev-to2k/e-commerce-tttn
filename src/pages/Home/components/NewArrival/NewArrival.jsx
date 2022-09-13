@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import NewArrival1 from '../../../assets/images/new-arrival-1.png'
-import NewArrival2 from '../../../assets/images/new-arrival-2.png'
-import NewArrival3 from '../../../assets/images/new-arrival-3.png'
+import NewArrival1 from '../../../../assets/images/new-arrival-1.png'
+import NewArrival2 from '../../../../assets/images/new-arrival-2.png'
+import NewArrival3 from '../../../../assets/images/new-arrival-3.png'
 
 function NewArrival() {
   const newArrivalList = [

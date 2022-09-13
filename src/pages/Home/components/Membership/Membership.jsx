@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import MembershipBanner from '../../../assets/images/membership.png'
-import Membership1 from '../../../assets/images/membership-1.png'
-import Membership2 from '../../../assets/images/membership-2.png'
-import Membership3 from '../../../assets/images/membership-3.png'
+import MembershipBanner from '../../../../assets/images/membership.png'
+import Membership1 from '../../../../assets/images/membership-1.png'
+import Membership2 from '../../../../assets/images/membership-2.png'
+import Membership3 from '../../../../assets/images/membership-3.png'
 
 function Membership() {
   const membershipList = [

@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
-import Banner1 from '../../../assets/images/banner-1.png'
-import Banner2 from '../../../assets/images/banner-2.png'
+import Banner1 from '../../../../assets/images/banner-1.png'
+import Banner2 from '../../../../assets/images/banner-2.png'
 
 function Introduce() {
   const settings = {

@@ -5,7 +5,8 @@ import Cart from './pages/Cart'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Main from './pages/Home/components/Main'
-import Product from './pages/Product'
+import Products from './pages/Products'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}>
           <Route index element={<Main />} />
-          <Route path='products' element={<Product />} />
+          <Route path='products/men' element={<Products />} />
           <Route path='cart' element={<Cart />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
@@ -24,6 +25,7 @@ function App() {
             <Route index element={<LeagueStandings />} />
           </Route> */}
         </Route>
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

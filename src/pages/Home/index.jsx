@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <Sidebar />
       </div>
       <div className='content w-10/12 bg-white px-4 overflow-y-scroll'>
+        <Navbar />
         <Outlet />
       </div>
     </div>

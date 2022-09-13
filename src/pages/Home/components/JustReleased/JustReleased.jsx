@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import JustReleased1 from '../../../assets/images/just-released-1.png'
-import JustReleased2 from '../../../assets/images/just-released-2.png'
+import JustReleased1 from '../../../../assets/images/just-released-1.png'
+import JustReleased2 from '../../../../assets/images/just-released-2.png'
 
 function JustReleased() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import FallComing1 from '../../../assets/images/fall-coming-1.png'
-import FallComing2 from '../../../assets/images/fall-coming-2.png'
+import FallComing1 from '../../../../assets/images/fall-coming-1.png'
+import FallComing2 from '../../../../assets/images/fall-coming-2.png'
 
 function FallComing() {
   return (
